@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --primary-color: #1AA3E9;
+    --secondary-color: #19456B;
+    --bg-color: #fff;
+    --inpt-clr: #F6F9FE;
+    --inpt-placeholder-clr: #999CB8;
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--body-font), sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 83%;
+    margin-top: 50px;
+    width: 250px;
+    position: absolute;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 1000px;   
+}
+
+#lottie{
+    width: 50%;
+    height: 50%;
+    z-index: 10000;
+    margin-top: 12%;
+    margin-left: 25%;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper div img:first-child {
+    width: 991px;
+    height: 937px;
+    flex-wrap: wrap;
+}
+
+.form__sign-in {
+    display: flex;
+    margin-top: -80%;
+    margin-left: 9em;
+}
+
+.form__sign-in div h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.text{
+    color: #565656;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.form__sign-in div:nth-child(2) {
+    margin-top: 55px;
+}
+
+.form__sign-in .input-text {
+    width: 635px;
+    height: 70px;
+    font-size: 19px;
+    background: var(--bg-color);
+    border: 1px solid #F0F0F0;
+    border-radius: 88px;
+    padding-left: 40px;
+    outline-style: none;
+}
+
+
+.form__sign-in .input-text::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    color: #bcbdc9;
+    letter-spacing: 1px;
+}
+
+.form__sign-in button {
+    margin-top: 5%;
+    margin-left: 25%;
+    background: var(--primary-color);
+    box-shadow: 0px 5px 20px rgba(26, 163, 233, 0.42);
+    border-radius: 54px;
+    font-weight: 600;
+    font-size: 18px;   
+    width: 300px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    color: #fff;  
+    outline-style: none;
+    letter-spacing: 1px;
+}
+
+.form__sign-in button:first-child:hover {
+    box-shadow: none;
+    transition: all ease-in-out 0.2s;
+    transform: scale(1.1);
+}
+
+.link {
+    margin-left: 11.5em;
+    color: var(--secondary-color);
+    font-style: normal;
+}
+
+.form__sign-in a {
+    padding-left: 6px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+ 
+
+
+
+
