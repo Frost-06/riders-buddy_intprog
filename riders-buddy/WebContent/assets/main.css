@@ -157,6 +157,11 @@ header {
     color: rgba(0, 0, 0, 0.70);
 }
 
+.center-head input:focus {
+    transition: .1s all ease-in-out;
+    background-color: #ECF2FB;
+}
+
 
 
 .center-head input::placeholder {
@@ -167,7 +172,7 @@ header {
 }
 
 .center-head svg {
-    margin-left: -10.5%;
+    margin-left: -10%;
     cursor: pointer;
 }
 
@@ -459,6 +464,8 @@ header {
     width: 100%;
     margin-left: 6px;
 }
+
+
 
 
 

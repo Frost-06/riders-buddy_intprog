@@ -13,9 +13,13 @@
 
 </head>
 <body>
-    <div class="loading">
-        <div id="lottie"></div>
-    </div>
+	<% if(request.getParameter("error")==null) { %>
+         <div class="loading">
+         	<%=" " %>
+       		<div id="lottie"></div>
+    	</div>
+     <% } else { %>
+     <% } %>
     <img src="assets/icons/main-logo.svg" alt="" class="logo">
     <div class="wrapper">
         <div>  
@@ -28,7 +32,7 @@
                     <div>
                         <h2>Login</h2>
                         <p class="text">Username</p>
-                        <input type="text" name="username" id="" class="input-text" placeholder="Ex: ridersbuddy@gmail.com" required>
+                        <input type="text" name="username" id="" class="input-text" placeholder="Ex: Frost" required>
                     </div>
                     <div>
                         <p class="text">Password</p>
@@ -36,6 +40,15 @@
                     </div>
                     <div>
                         <div>
+                        <%
+                			if(request.getParameter("error")==null) {
+		                %>
+		                	<p style="color: #fff"><%="none" %></p>
+		                <% } else { %>
+		                	<p style="color: #e91a3d"><%="The username or password you've entered is incorrect." %></p>
+		                <%
+		                	}
+		                %>
                             <button type="submit" class="log-in" name="submit">Log in</button>
                             <p class="link">Don't have an account?<a href="#">Sign up</a></p>
                         </div>

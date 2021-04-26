@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --primary-color: #1AA3E9;
+    --secondary-color: #19456B;
+    --bg-color: #fff;
+    --inpt-clr: #F6F9FE;
+    --inpt-placeholder-clr: #999CB8;
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font), sans-serif;
+}
+
+.dtr-tag {
+  margin-left: 33.5%;
+  margin-top: 1%;
+}
+
+.dtr-tag h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29px;
+  color: var(--secondary-color);
+}
+
+.dtr-tag p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: -5%;
+}
+
+.frm-dtr {
+  margin-left: 36.2em;
+}
+
+.frm input {
+  background: var(--bg-color) ;
+  border: 1px solid rgba(25, 69, 107, 0.63);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  width: 200px !important;
+  height: 50px;
+}
+
+.input-dtr {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+
+}
+
+.input-dtr:focus {
+  transition: .2s all ease-in-out !important;
+  box-shadow: 0px 5px 20px rgba(0, 162, 243, 0.42) !important;
+  background-color: #fff !important;
+  outline-style: none !important; 
+}
+
+.dtr-tbl {
+  width: 50%;
+  margin-left: 28%;
+  margin-top: 3em;
+  left: 616px;
+  top: 502px;
+  border-radius: 14px !important;
+  padding: 2em !important;
+  background-color: #fff !important;
+  box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.09);
+}
+
+
+form .editBtn {
+  margin-right: 2em;
+  background: var(--primary-color);
+  box-shadow: 0px 5px 20px rgba(26, 163, 233, 0.42);
+  border-radius: 54px;
+  font-weight: 600;
+  font-size: 16px;   
+  width: 200px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  color: #fff;  
+  outline-style: none;
+  letter-spacing: 1px;
+  margin-left: 12% !important;
+}
+
+.editBtn:hover {
+  box-shadow: none;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+  transform: scale(1.1);
+}
+
+.saveBtn-1:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  border: none;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.13);
+}
+
+form .saveBtn-1  {
+  margin-top: 2em;
+  border: 1px solid var(--primary-color);
+  letter-spacing: 1px;
+  background-color: #fff;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 54px;
+  border-radius: 54px;
+  width: 200px;
+  height: 50px;
+  outline-style: none;
+  cursor: pointer;
+  visibility: visible !important;
+}
+
+.tbl-txt {
+  margin-left: 33%;
+  margin-top: 6%;
+}
+
+
+.tbl-txt p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*-----Data tables----*/
+.dataTables_wrapper {
+  background-color: #fff;
+}
+.dataTables_length {
+  margin-bottom: 2em;
+  margin-top: 6px;
+}
+
+thead{
+  box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.09);
+  border-radius: 14px;
+  color: #1AA3E9;
+  position: sticky;
+  top: 0;
+  margin-top: 2em;
+  font-weight: normal;
+  outline-style: none;
+}
+
+tbody {
+  text-align: center;
+  border: none;
+  color: #19456B;
+}
+
+.dataTables_filter {
+  margin-bottom: 2em;
+}
+.dataTables_filter input {
+  background: var(--bg-color) ;
+  border: 1px solid rgba(25, 69, 107, 0.63);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  width: 200px !important;
+  height: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding-left: 1em;
+}
+
+.dataTables_filter input::placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.dataTables_filter input:focus {
+    transition: .2s all ease-in-out;
+    box-shadow: 0px 5px 20px rgba(0, 162, 243, 0.42);
+    background-color: #fff;
+    outline-style: none;
+}
+
+.dataTables_length select {
+  background: #FFFFFF;
+  border: 1px solid rgba(25, 69, 107, 0.63);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  width: 70px !important;
+  height: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding-left: 1em;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 6px;
+}
+
+.dataTables_length select:focus {
+  transition: .2s all ease-in-out;
+  box-shadow: 0px 5px 20px rgba(0, 162, 243, 0.42);
+  background-color: #fff;
+  outline-style: none;
+}
+
+.dataTables_length label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.dataTables_info {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.dataTables_wrapper .dataTables_paginate {
+  display: inline;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:focus {
+  background: #1AA3E9 !important;
+  color: #fff!important;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 20% !important;
+  vertical-align: top !important;
+  color: #ffffff!important;
+  margin: 0 auto !important;
+  border: 0!important;
+  line-height: 21px !important;
+  box-shadow: none!important;
+  background: rgba(25, 69, 107, 0.10) !important; 
+  margin-left: 12px !important;
+  display: inline !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button .previous {
+
+  border-radius: 80% !important;
+
+}
+
+table.dataTable thead th, table.dataTable thead td {
+  border: none !important;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td {
+  border-top: none !important;
+  color: #fff;
+  font-size: 1px;
+}
+
+table { border-collapse:collapse; }
+
+.dataTable {
+  margin: none;
+}
+
+
+table.dataTable thead .sorting_asc {
+  background-image: url(../assets/img/sort_asc.png) !important;
+}
+
+table.dataTable thead .sorting_desc {
+  background-image: url(../assets/img/sort_desc.png) !important;
+}
+

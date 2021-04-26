@@ -69,7 +69,8 @@ public class login_servlet extends HttpServlet {
             } else {
                 HttpSession session = request.getSession();
                 System.out.println("Wrong username and password");
-                response.sendRedirect("/riders-buddy/login");
+                String error ="true";
+                response.sendRedirect("/riders-buddy/login?error="+error);
                 //session.setAttribute("user", username);
             }
         } catch (ClassNotFoundException e) {
